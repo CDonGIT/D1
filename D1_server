@@ -24,9 +24,9 @@ void setup() {
 
   IPAddress myIP = WiFi.softAPIP();     //Check the IP assigned. Put this Ip in the client host.
   Serial.print("AP IP address: ");
-  Serial.println(myIP);         //Print the esp8266-01 IP(Client must also be on the save IP series)
+  Serial.println(myIP);                 //Print the esp8266-01 IP(Client must also be on the save IP series)
   server.on("/Led", handleRoot);           //Checking client connection
-  server.begin();                       // Start the server
+  server.begin();                        // Start the server
   Serial.println("Server started");
 }
 
